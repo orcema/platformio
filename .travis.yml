@@ -25,7 +25,7 @@ install:
   # temporary hook to fix issue with gcc-pic32
   - sudo dpkg --add-architecture i386
   - sudo apt-get update -qq
-  - if [[ "$TOX_ENV" == "py27" ]] && [[ "$TRAVIS_OS_NAME" == "linux" ]]; then sudo apt-get install -qq lib32z1 lib32ncurses5 libbz2-1.0:i386; fi
+  - if [[ "$TOX_ENV" == "py27" ]] && [[ "$TRAVIS_OS_NAME" == "linux" ]]; then sudo apt-get install -qq ia32-libs lib32z1 lib32ncurses5 libbz2-1.0:i386; fi
 
 script:
   - tox -e $TOX_ENV
