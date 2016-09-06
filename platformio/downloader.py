@@ -45,7 +45,7 @@ class FileDownloader(object):
             self._fname = url.split("/")[-1]
 
         self._progressbar = None
-        self._destination = self._fname
+        self._destination = self._fname.decode("utf-8")
         if dest_dir:
             self.set_destination(join(dest_dir, self._fname))
 
