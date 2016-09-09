@@ -4,10 +4,26 @@ Release Notes
 PlatformIO 3.0
 --------------
 
-3.0.0 (2016-??-??)
+3.0.2 (2016-09-??)
 ~~~~~~~~~~~~~~~~~~
 
-* PlatformIO Plus
+* Disable SSL Server-Name-Indication for Python < 2.7.9
+* Return valid exit code from ``plaformio test`` command
+
+* Development platform `Espressif 8266 <https://github.com/platformio/platform-espressif8266>`__
+
+  + Add support for `SparkFun Blynk Board <https://www.sparkfun.com/products/13794>`_
+
+3.0.1 (2016-09-08)
+~~~~~~~~~~~~~~~~~~
+
+* Disabled temporary SSL for PlatformIO services
+  (`issue #772 <https://github.com/platformio/platformio/issues/772>`_)
+
+3.0.0 (2016-09-07)
+~~~~~~~~~~~~~~~~~~
+
+* `PlatformIO Plus <https://pioplus.com>`__
 
   + Local and Embedded `Unit Testing <http://docs.platformio.org/en/latest/unit_testing.html>`__
     (`issue #408 <https://github.com/platformio/platformio/issues/408>`_,
@@ -42,6 +58,7 @@ PlatformIO 3.0
     (`issue #588 <https://github.com/platformio/platformio/issues/588>`_)
   + Allowed ``library.json`` to specify sources other than PlatformIO's Repository
     (`issue #461 <https://github.com/platformio/platformio/issues/461>`_)
+  + Search libraries by headers/includes with ``platformio lib search --header`` option
 
 * New Intelligent Library Build System
 

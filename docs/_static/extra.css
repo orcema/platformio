@@ -262,6 +262,12 @@ nav {
   visibility: none;
 }
 
+@media (min-width: 768px) {
+  .wy-side-scroll {
+    padding-bottom: 50px;
+  }
+}
+
 .navbar-header .navbar-brand {
   color: #e0e0e0;
   background: url("../_static/platformio-logo-xs.png") no-repeat;
@@ -290,6 +296,16 @@ nav {
   .navbar .github-corner {
     display: block;
   }
+}
+
+.navbar-inverse .navbar-nav > li.nav-pioplus > a,
+.navbar-inverse .navbar-nav > li.nav-pioplus > a:visited
+{
+  color: #ff6600;
+}
+
+.navbar-inverse .navbar-nav > li.nav-pioplus > a:hover {
+  color: #ff9900;
 }
 
 .top-banner {
